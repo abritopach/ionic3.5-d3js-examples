@@ -20,14 +20,12 @@ export class HomePage {
 
   }
 
-  /*
   ngAfterViewInit() {
 
     // must wait for AfterViewInit if you want to modify the tabs instantly
     this.superTabsCtrl.setBadge('firstPage', 5);
 
   }
-  */
 
   hideToolbar() {
     this.superTabsCtrl.showToolbar(false);
