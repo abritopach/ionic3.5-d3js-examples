@@ -6,19 +6,30 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { BarChartPage } from '../pages/bar-chart/bar-chart';
+import { PieChartPage } from '../pages/pie-chart/pie-chart';
+import { LineChartPage } from '../pages/line-chart/line-chart';
+import { SuperTabsModule } from 'ionic2-super-tabs';
 
 @NgModule({
   declarations: [
     MyApp,
+    BarChartPage,
+    PieChartPage,
+    LineChartPage,
     HomePage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    SuperTabsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    BarChartPage,
+    PieChartPage,
+    LineChartPage,
     HomePage
   ],
   providers: [
