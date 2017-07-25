@@ -1,26 +1,52 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+# D3.js with Ionic 3.5 Examples
 
-## How to use this template
+This project shows how to integrate D3.js with Ionic 3.5.
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+We'll implement a few D3.js examples described in [bl.ocks.org](https://bl.ocks.org/) in Angular2.
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+##  Examples Summary
 
-### With the Ionic CLI:
+ * Line Chart
+ * Bar Chart
+ * Pie Chart
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+## Configuration
+
+Before you go through this example, you should have at least a basic understanding of Ionic 2 concepts. You must also already have Ionic 2, Node.js and npm installed on your machine.
+
+1. Install D3.js
 
 ```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
+	npm install d3 --save
+	npm install @types/d3 --save-dev --save-exact
 ```
+	
+2. Run Ionic App
 
-Then, to run it, cd into `myBlank` and run:
+	* Test in localhost: 
+	
+	```bash
+		ionic serve
+	```
 
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
+	* Test in Android/iOS mobile: 
+	
+		```bash
+    		ionic cordova add platform android 
+    		ionic cordova add platform ios
+    		ionic cordova run android
+    		ionic cordova run ios
+    	```
 
-Substitute ios for android if not on a Mac.
+	![Bar Chart](readme_resources/bar-chart.png "Bar Chart")
+	![Pie Chart](readme_resources/pie-chart.png "Pie Chart")
+     
+
+## License
+MIT License.
+
+Original work Copyright (c) 2017 Adrián Brito  
+
+
+
 
